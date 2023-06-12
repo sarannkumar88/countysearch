@@ -52,6 +52,7 @@ public class County implements Serializable {
 	private String state;
 	@JsonProperty("name")
 	private String name;
+	@JsonIgnore
 	@Transient
 	private Map<String, Object> optional = new HashMap<>();
 	
