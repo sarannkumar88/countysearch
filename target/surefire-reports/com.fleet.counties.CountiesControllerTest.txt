@@ -1,0 +1,9 @@
+-------------------------------------------------------------------------------
+Test set: com.fleet.counties.CountiesControllerTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 4.587 s <<< FAILURE! - in com.fleet.counties.CountiesControllerTest
+shouldFetchOneMovieByNameAndState  Time elapsed: 0.581 s  <<< FAILURE!
+java.lang.AssertionError: No value at JSON path "$.name"
+	at com.fleet.counties.CountiesControllerTest.shouldFetchOneMovieByNameAndState(CountiesControllerTest.java:100)
+Caused by: com.jayway.jsonpath.PathNotFoundException: Expected to find an object with property ['name'] in path $ but found 'net.minidev.json.JSONArray'. This is not a json object according to the JsonProvider: 'com.jayway.jsonpath.spi.json.JsonSmartJsonProvider'.
+
